@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Health Plus</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="./createandaccess.js"></script>
+  <link rel="stylesheet" href="style/records.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="EHRs.html">Home</a></li>
+        <li><a href="patientadd.html">Patients</a></li>
+        <li><a href="records.html">Hospital</a></li>
+        <li><a href="lookup.html">Lookup</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="records">
+    <h2>Access Records</h2>
+    <label>Patient ID:</label>
+    <input type="text" id="patient-id" required>
+
+    <section>
+      <div id="personal-information">
+
+      </div>
+      <table>
+        <tbody id="info"></tbody>
+      </table>
+      <br>
+      <div id="record-information"></div>
+      <table>
+        <tbody id="record"></tbody>
+        
+      </table>
+    </section>
+    <button id="deploy-record-button" onclick="accessrecord()">Access</button>
+  </div>
+  <footer>
+    <p>&copy; 2023 Electronic Health Records | Team Medi Vault</p>
+  </footer>
+</body>
+
+</html>
